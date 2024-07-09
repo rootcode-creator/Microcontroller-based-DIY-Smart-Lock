@@ -1,8 +1,10 @@
-# DIY-_Smart_Lock
+# Microcontroller based DIY Smart Lock
 DIY Smart Lock with Arduino and RFID
-This is a rfid based smart lock.
 
-Components
+In this project, I have used an RFID reader (MFRC522), Arduino microcontroller (Mega 2560), Arduino programming lanuage and other components to create an RFID-based smart lock. This lock is a small version of an automated RFID-based smart lock, an important component of an automated home. 
+
+
+**Components:**
     <ul>
     <li>Arduino. I've used an Mega 2560, though any Arduino board or clone will suffice.</li>
     <li>3 x 220 ohm resistors</li>
