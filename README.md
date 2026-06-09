@@ -56,15 +56,15 @@ Microcontroller-based-DIY-Smart-Lock/
 └── README.md
 ```
 
-### Project setup
+### 🛠️ Project setup
 
-#### Pin diagram
+#### 📌 Pin diagram
 
 The following Arduino Mega 2560 pin diagram shows the main board connections and pin layout used during the hardware setup.
 
-<img src="pinout-Arduino-Mega2560__1.png" alt="Arduino Mega 2560 pin diagram" width="92%" style="display:block; margin:0 auto; max-height:420px; object-fit:contain;" />
+<img src="pinout-Arduino-Mega2560__1.png" alt="Arduino Mega 2560 pin diagram" width="92%" style="display:block; margin:0 auto; max-height:280px; object-fit:contain;" />
 
-### How to setup the project
+### ⚙️ How to setup the project
 
 Use the files in this repository in this order:
 
@@ -84,13 +84,17 @@ Use the files in this repository in this order:
 
 This setup is based on the main sketch, the hardware circuit guide, and the Arduino Mega pin diagram files included in the project folder.
 
-### Demonstration
+### 🎥 Demonstration
 
 Watch the project demonstration video below to see the smart lock in action.
 
-<a href="https://www.youtube.com/watch?v=GOO84CGBPz8" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.youtube.com/vi/GOO84CGBPz8/maxresdefault.jpg" alt="Smart Lock Demonstration" width="100%" />
-</a>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=GOO84CGBPz8" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/GOO84CGBPz8/maxresdefault.jpg" alt="Smart Lock Demonstration" width="100%" style="max-width: 820px; border-radius: 12px;" />
+  </a>
+</p>
+
+> Click the image above to open the YouTube video in a new tab.
 
 ## 📄 License
 
