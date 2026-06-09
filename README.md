@@ -19,8 +19,11 @@
 
 - [🚀 Project intro](#-project-intro)
 - [🧩 Components](#-components)
+- [Features](#features)
+- [Requirements](#requirements)
 - [📁 Project structure](#-project-structure)
 - [How to setup the project](#how-to-setup-the-project)
+- [Troubleshooting](#troubleshooting)
 - [📄 License](#-license)
 
 ## 🚀 Project intro
@@ -39,6 +42,34 @@ In this project, I have used an RFID reader (MFRC522), Arduino microcontroller (
 - 12v power supply
 - Breadboard and hook up wires
 
+## Features
+
+- RFID-based access control using the MFRC522 reader
+- Master card programming for adding or removing authorized users
+- EEPROM storage for saved RFID IDs so access records are retained after power loss
+- Visual feedback through red, green, and blue LEDs
+- Relay/MOSFET-controlled solenoid lock for door unlock action
+- Wipe mode to clear stored RFID records when needed
+
+## Requirements
+
+### Hardware
+
+- Arduino Mega 2560
+- MFRC522 RFID module
+- 12V solenoid lock or lock actuator
+- Logic-level MOSFET/relay driver circuit
+- LEDs and resistors
+- 12V power supply
+- Breadboard and jumper wires
+
+### Software
+
+- Arduino IDE
+- MFRC522 library
+- SPI and EEPROM libraries (already included with the Arduino core)
+- Serial Monitor set to 9600 baud for debugging and setup
+
 ## 📁 Project structure
 
 ```txt
@@ -56,7 +87,7 @@ Microcontroller-based-DIY-Smart-Lock/
 └── README.md
 ```
 
-### 🛠️ Project setup
+### Project setup
 
 #### 📌 Pin diagram
 
@@ -64,7 +95,7 @@ The following Arduino Mega 2560 pin diagram shows the main board connections and
 
 <img src="pinout-Arduino-Mega2560__1.png" alt="Arduino Mega 2560 pin diagram" width="92%" style="display:block; margin:0 auto; max-height:280px; object-fit:contain;" />
 
-### ⚙️ How to setup the project
+### How to setup the project
 
 Use the files in this repository in this order:
 
@@ -83,6 +114,22 @@ Use the files in this repository in this order:
 5. Scan a tag to define it as the master card, then use other RFID cards to grant or deny access. Press and hold the wipe button to clear stored RFID records if needed.
 
 This setup is based on the main sketch, the hardware circuit guide, and the Arduino Mega pin diagram files included in the project folder.
+
+### ⚙️ How it works
+
+1. The Arduino boots and initializes the SPI communication with the MFRC522 reader.
+2. The system waits for an RFID tag to be scanned.
+3. If the scanned card matches the stored master card, the device enters programming mode.
+4. In programming mode, new cards can be added or removed from EEPROM memory.
+5. In normal mode, authorized tags unlock the solenoid for a short time, while unknown tags trigger the denied signal.
+6. The wipe button can erase the stored access records when you want to reset the system.
+
+### Troubleshooting
+
+- If the MFRC522 reader is not detected, check the SPI wiring and ensure the correct SS/RST pins are connected.
+- If the relay or solenoid does not respond, verify the MOSFET/relay driver circuit and the 12V supply.
+- If the serial monitor shows no output, confirm that the board is connected and the baud rate is set to 9600.
+- If cards are not being recognized, re-scan the master card and confirm the RFID library is installed correctly.
 
 ### 🎥 Demonstration
 
