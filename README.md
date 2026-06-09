@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="smartlock.svg" alt="Smart Lock" width="160" style="display:block; margin:0 auto 12px;" />
+</p>
 <h1 align="center">Microcontroller based DIY Smart Lock</h1>
 
 <p align="center"><i>DIY Smart Lock with Arduino and RFID</i></p>
