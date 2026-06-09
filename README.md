@@ -20,6 +20,7 @@
 - [🚀 Project intro](#-project-intro)
 - [🧩 Components](#-components)
 - [📁 Project structure](#-project-structure)
+- [How to setup the project](#how-to-setup-the-project)
 - [📄 License](#-license)
 
 ## 🚀 Project intro
@@ -45,7 +46,13 @@ Microcontroller-based-DIY-Smart-Lock/
 ├── CSE323_PROJECT/
 │   └── CSE323_PROJECT.ino
 ├── HARDWARE SETUP/
+│   └── CSE323 Project Hardware Circuit setup.pdf
+├── Delay-Timer-Circuit-using-IRFZ44N.jpg
+├── Introduction-to-IRFZ44N_3.png.png
 ├── LICENSE
+├── pinout-Arduino-Mega2560__1.png
+├── pinout-Arduino-Mega2560__2.png
+├── ProjectCode.zip
 └── README.md
 ```
 
@@ -55,13 +62,35 @@ Microcontroller-based-DIY-Smart-Lock/
 
 The following Arduino Mega 2560 pin diagram shows the main board connections and pin layout used during the hardware setup.
 
-<img src="pinout-Arduino-Mega2560__1.png" alt="Arduino Mega 2560 pin diagram" width="100%" />
+<img src="pinout-Arduino-Mega2560__1.png" alt="Arduino Mega 2560 pin diagram" width="92%" style="display:block; margin:0 auto; max-height:420px; object-fit:contain;" />
+
+### How to setup the project
+
+Use the files in this repository in this order:
+
+1. Open the hardware setup guide in `HARDWARE SETUP/CSE323 Project Hardware Circuit setup.pdf` to wire the Arduino Mega 2560, MFRC522 reader, LEDs, relay/MOSFET, and 12V solenoid correctly.
+2. Open `CSE323_PROJECT/CSE323_PROJECT.ino` in the Arduino IDE and make sure the required libraries are available: `SPI.h`, `EEPROM.h`, and `MFRC522.h`.
+3. Upload the sketch to the Arduino Mega 2560 using the pin mapping defined in the code:
+   - MFRC522 RST → pin 5
+   - MFRC522 SDA/SS → pin 53
+   - SPI MOSI → pin 51
+   - SPI MISO → pin 50
+   - SPI SCK → pin 52
+   - LEDs → pins 6, 8, and 10
+   - Relay/MOSFET control → pin 11
+   - Wipe button → pin 33
+4. Power the circuit with the 12V supply and then open the Serial Monitor at 9600 baud to follow the setup process.
+5. Scan a tag to define it as the master card, then use other RFID cards to grant or deny access. Press and hold the wipe button to clear stored RFID records if needed.
+
+This setup is based on the main sketch, the hardware circuit guide, and the Arduino Mega pin diagram files included in the project folder.
 
 ### Demonstration
 
 Watch the project demonstration video below to see the smart lock in action.
 
-<iframe width="100%" height="420" src="https://www.youtube.com/embed/GOO84CGBPz8" title="Smart Lock Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=GOO84CGBPz8" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/GOO84CGBPz8/maxresdefault.jpg" alt="Smart Lock Demonstration" width="100%" />
+</a>
 
 ## 📄 License
 
