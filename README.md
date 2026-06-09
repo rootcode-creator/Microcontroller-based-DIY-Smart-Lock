@@ -49,6 +49,20 @@ Microcontroller-based-DIY-Smart-Lock/
 └── README.md
 ```
 
+### Project setup
+
+#### Pin diagram
+
+The following Arduino Mega 2560 pin diagram shows the main board connections and pin layout used during the hardware setup.
+
+<img src="pinout-Arduino-Mega2560__1.png" alt="Arduino Mega 2560 pin diagram" width="100%" />
+
+### Demonstration
+
+Watch the project demonstration video below to see the smart lock in action.
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/GOO84CGBPz8" title="Smart Lock Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## 📄 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
