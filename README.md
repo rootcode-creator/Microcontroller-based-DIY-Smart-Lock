@@ -18,7 +18,6 @@
 ## Table of Contents
 
 - [🚀 Project intro](#-project-intro)
-- [🧩 Components](#-components)
 - [Features](#features)
 - [Requirements](#requirements)
 - [📁 Project structure](#-project-structure)
@@ -29,18 +28,6 @@
 ## 🚀 Project intro
 
 In this project, I have used an RFID reader (MFRC522), Arduino microcontroller (Mega 2560), Arduino programming language and other components to create an RFID-based smart lock. This lock is a small version of an automated RFID-based smart lock, an important component of an automated home.
-
-## 🧩 Components
-
-- Arduino. I've used a Mega 2560, though any Arduino board or clone will suffice.
-- 3 x 220 ohm resistors
-- 1 x 10k ohm resistor
-- Logic-level N channel MOSFET
-- MFRC522 module with at least two cards
-- Red, blue, and green LEDs
-- 12v Solenoid ($2)
-- 12v power supply
-- Breadboard and hook up wires
 
 ## Features
 
@@ -59,13 +46,15 @@ In this project, I have used an RFID reader (MFRC522), Arduino microcontroller (
 
 ### Hardware
 
-- Arduino Mega 2560
-- MFRC522 RFID module
-- 12V solenoid lock or lock actuator
-- Logic-level MOSFET/relay driver circuit
-- LEDs and resistors
-- 12V power supply
-- Breadboard and jumper wires
+- Arduino. I've used a Mega 2560, though any Arduino board or clone will suffice.
+- 3 x 220 ohm resistors
+- 1 x 10k ohm resistor
+- Logic-level N channel MOSFET
+- MFRC522 module with at least two cards
+- Red, blue, and green LEDs
+- 12v Solenoid ($2)
+- 12v power supply
+- Breadboard and hook up wires
 
 ### Software
 
