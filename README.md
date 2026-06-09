@@ -44,12 +44,16 @@ In this project, I have used an RFID reader (MFRC522), Arduino microcontroller (
 
 ## Features
 
-- RFID-based access control using the MFRC522 reader
-- Master card programming for adding or removing authorized users
-- EEPROM storage for saved RFID IDs so access records are retained after power loss
-- Visual feedback through red, green, and blue LEDs
-- Relay/MOSFET-controlled solenoid lock for door unlock action
-- Wipe mode to clear stored RFID records when needed
+### Core features
+
+| Feature | Status | Description |
+| --- | --- | --- |
+| RFID access control | ✅ Current | Uses the MFRC522 module to read authorized RFID tags and grant access. |
+| Master card programming | ✅ Current | Lets you define a master card to add or remove user cards. |
+| EEPROM storage | ✅ Current | Saves approved RFID IDs in non-volatile memory so access records remain after power loss. |
+| LED status feedback | ✅ Current | Uses red, green, and blue LEDs to indicate access, denial, and programming mode. |
+| Solenoid lock control | ✅ Current | Activates a relay/MOSFET circuit to unlock the door for a set duration. |
+| Wipe/reset mode | ✅ Current | Supports a wipe button to clear stored records and reset the system. |
 
 ## Requirements
 
