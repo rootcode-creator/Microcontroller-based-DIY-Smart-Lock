@@ -45,7 +45,7 @@ In this project, I have used an RFID reader (MFRC522), Arduino microcontroller (
 | Solenoid lock control | ✅ Current | Activates a relay/MOSFET circuit to unlock the door for a set duration. |
 | Wipe/reset mode | ✅ Current | Supports a wipe button to clear stored records and reset the system. |
 
-## Requirements
+## 🧰 Requirements
 
 ### Hardware
 
